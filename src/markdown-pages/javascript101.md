@@ -1,6 +1,7 @@
 ---
 title: "JavaScript 101"
 date: "2018-10-10"
+description: "Basics of javascript"
 ---
 
 ### Javascript 101
