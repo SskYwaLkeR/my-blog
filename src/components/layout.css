@@ -91,13 +91,9 @@ pre {
   overflow: auto;
   word-wrap: normal;
   padding: 1.45rem;
-}
+  color: hsla(0, 0%, 0%, 0.8);
 
-blockquote {
-  margin-left: 1.45rem;
-  margin-right: 1.45rem;
-
-  margin-bottom: 1.45rem;
+  display: inline-block;
 }
 
 b,
@@ -132,14 +128,6 @@ code {
 pre code {
   background: none;
   line-height: 1.42;
-}
-
-pre {
-  background-color: rebeccapurple;
-  color: #ffffff;
-  display: inline-block;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 blockquote {
