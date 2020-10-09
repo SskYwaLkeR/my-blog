@@ -34,12 +34,6 @@ A pure function is a function that gives same output for same given outputs and 
 For Example:
 
 ```js
-// not pure function because its using global variable and not its own input to compute value
-var name = "hrishikesh"
-function cheer() {
-  console.log("Cheers" + name)
-}
-
 // pure function because here its only using its own input and only thing it does is it return its output
 function cheer(name) {
   return `Cheer ${name}`
@@ -51,6 +45,14 @@ cheer("hrishikesh")
 ### Side effects
 
 Side effects are those things inside a function which are accessing things beyond scope of it, or changing things outside scope of the function. For example `console.log` or if your function uses some globally defined variables to define output ,that function doesn't depend solely on its input its using something outside of it.
+
+```js
+// this function is not pure because its using side effects the global variable and not its own input to compute value
+var name = "hrishikesh"
+function cheer() {
+  console.log("Cheers" + name)
+}
+```
 
 > The basic idea here is that your function should take an input and use only that to give output.
 
@@ -85,4 +87,10 @@ Reason why I explained more about objects here is because _Objects_ are Non prim
 
 ### Higher order function
 
-In JS, functions are values (**first class citizens**). This mean that they can be assigned to variables or can be passed as value. Higher order function are function that takes another function as arguments or return function as their result. Something we see in Function composition above. The best use case of it is that we can create smaller functions that only take care of one piece of logic. Then we can compose more complex functions by using different smaller functions. Or we can use it as utility that can act on wide variety of data types or create a _curried function_.
+In JS, functions are values (**first class citizens**). This mean that they can be assigned to variables or can be passed as value. Higher order function are function that takes another function as arguments or return function as their result. Something we see in Function composition above. The best use case of it is that we can create smaller functions that only take care of one piece of logic. Then we can compose more complex functions by using different smaller functions. Or we can use it as utility that can act on wide variety of data types or create a _curried function_. Good example of these will be `Array.map()`, `_.curry` etc.
+
+### Reference link
+
+1. Here's a link to a good [medium blog](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0) about functional programming.
+
+2. An Excellent talk about functional programming by Anjana Vakil <iframe width="560" height="315" src="https://www.youtube.com/embed/e-5obm1G_FY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
