@@ -44,7 +44,7 @@ console.log(mapArr) // [1,2,3]
 
 Why we use map over regular `for` is because we do not want to mutate data while iterating over it and with map as it returns a new array of data and also it does not affect the actual data that is being used to iterate over. Here's [link](https://github.com/SskYwaLkeR/map-Function-For-Array-And-Objects/blob/master/index.js) to the above code.
 
-### forEach
+### forEach()
 
 JS forEach method allows you to execute a provided function once for each array element. It calls provided callback once for each element in arrray. I just have genralised it, to be used with objects along with arrays.
 
@@ -80,13 +80,13 @@ _.each(arr, cbFunction) //logs 1 2 3 and 0 1 2 (indexes)
 
 [Github link](https://github.com/SskYwaLkeR/iterables/blob/master/index.js) for the above code.
 
-### .reduce
+### .reduce()
 
 The reduce method result in single value output, using a **reducer** (that we provide) function on each element.
 
 ```js
-let reduce = function (list, callback, initial) {
-  let memo = initial
+let reduce = function (list, callback, initialValue) {
+  let memo = initialValue
   let length = list.length
   for (let i = 0; i < length; i++) {
     if (i === 0 && memo === undefined) {
