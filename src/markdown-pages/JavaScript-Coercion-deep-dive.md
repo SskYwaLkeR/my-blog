@@ -81,7 +81,7 @@ Edge cases and gotchas:
 
 ```js
 [null, undefined] // ","
-0 // "0"
+-0 // "0"
 ```
 <!-- prettier-ignore-end -->
 
@@ -107,6 +107,11 @@ false // 0
 true // `
 null // 0
 undefined // NaN
+[""] //0
+[undefined] // 0
+["-0"] // -0
+[null] //0
+[1,2,3] // NaN
 
 ```
 <!-- prettier-ignore-end -->
@@ -157,23 +162,24 @@ Object // return a default value for object.
 
 For Array and Objects `valueOf()` return itself (_this_) so it ignores `valueOf` and directly goes to `toString()`.
 
-<!-- prettier-ignore-start -->
+### A cool example
 
 ```js
+Number.prototype.valueOf = function () {
+  return 5
+}
 
-[""] //0
-[undefined] // 0
-["-0"] // -0
-[null] //0
-[1,2,3] // NaN
-
+new Number(1) == 5 //true
 ```
-<!-- prettier-ignore-end -->
+
+**HOW??** , here in this case `1 == 5` would have worked just fine without any problem (ofcourse the output would be false too) but just because we used `Number(1)` it has to go through the `toPrimitive` and thus invoke valueOf() which returns 5 and hence `true`.
+
+> The point of this example was just to give you an idea(flow) of how conversion happens 😬.
+
+So that's pretty much about javascript coercion that I have to say. Hope you get some good idea about it.
 
 ### Referece
 
 1. [Kyle Simpson's book - You don't know JS](https://leanpub.com/ydkjsy-get-started).
 2. [Ecma script docs](https://www.ecma-international.org/ecma-262/5.1/#sec-9.1).
 3. [An amazing blog about it](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)
-
-So that's pretty much about javascript coercion that I have to say. Hope you get some good idea about it.
