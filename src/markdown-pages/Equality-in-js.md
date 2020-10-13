@@ -66,3 +66,9 @@ Instead of trolling JS about this, that how a number can ever be equal to an arr
 - `==` is for comparison of known types and optionally for situation where coercion is helpful.
 
 > Use === if you are uncertain about the types.
+
+### Reference Links :
+
+1. [Kyle Simpson's book - You don't know JS](https://leanpub.com/ydkjsy-get-started).
+2. [EcmaScript specification](https://www.ecma-international.org/ecma-262/5.1/#sec-11.9.3).
+3. [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality)
