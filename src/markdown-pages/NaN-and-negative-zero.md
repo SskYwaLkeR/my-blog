@@ -53,7 +53,7 @@ if (nikeStocks < 0) {
 }
 ```
 
-But ` -0 < 0` returns `false` (also `-0 > 0` returns same `false`).
+But ` -0 < 0` returns `false` (also intrestingly `-0 > 0` returns same `false`).
 
 So the best option to check for _negative zero_ is by using **`Object.is()`**
 
