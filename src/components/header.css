@@ -1,0 +1,23 @@
+header {
+  margin-bottom: 1.45rem;
+}
+.header-body {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+}
+.header-nav a {
+  color: #81e6d9;
+  margin-right: 1rem;
+}
+
+.socials a {
+  margin-left: 1rem;
+}
