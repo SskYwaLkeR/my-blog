@@ -1,0 +1,44 @@
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-wrapper .profile-desc {
+  text-align: center;
+}
+
+.profile-wrapper .my-pic {
+  width: 120px;
+}
+
+.profile-wrapper h1 {
+  color: #ffeb3b;
+  margin-bottom: 0.5rem;
+}
+
+.profile-wrapper p {
+  color: #ff335f;
+  margin-bottom: 4rem;
+}
+
+.blog-title-link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-to-read {
+  font-size: 0.8em;
+  color: rgb(153, 153, 153);
+}
+
+.blog-date {
+  color: #ffeb3b;
+}
+
+@media screen and (max-width: 480px) {
+  .blog-title-link {
+    flex-direction: column;
+  }
+}

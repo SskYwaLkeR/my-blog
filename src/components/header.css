@@ -10,11 +10,7 @@ header {
   align-items: center;
 }
 
-header a {
-  text-decoration: none;
-}
 .header-nav a {
-  color: #81e6d9;
   margin-right: 1rem;
 }
 

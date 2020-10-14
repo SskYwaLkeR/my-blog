@@ -12,21 +12,27 @@ const Header = () => (
     <div className="header-body">
       <div className="header-nav">
         <Link to="/">Home</Link>
-        <Link to="/">About</Link>
+        <Link to="/#">About</Link>
       </div>
       <div className="socials">
-        <Link to="/">
+        <a aria-label="Twitter" href="https://twitter.com/Hrishikeshrai2">
           <TwitterIcon />
-        </Link>
-        <Link to="/">
+        </a>
+        <a
+          aria-label="Linked In"
+          href="https://www.linkedin.com/in/hrishikesh-rai-b04a88179/"
+        >
           <LinkedInIcon />
-        </Link>
-        <Link to="/">
+        </a>
+        <a
+          aria-label="Instagram"
+          href="https://www.instagram.com/hrishi_kesh_rai/"
+        >
           <InstagramIcon />
-        </Link>
-        <Link to="/">
+        </a>
+        <a aria-label="Github" href="https://github.com/SskYwaLkeR">
           <GithubIcon />
-        </Link>
+        </a>
       </div>
     </div>
   </header>

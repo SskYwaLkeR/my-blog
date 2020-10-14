@@ -10,8 +10,8 @@ I'm pretty sure being in JavaScript community you might have come across the ter
 
 Type coercion is automatic conversion of values from one data type to anonther. There are two types of coercion (we say) in JavaScript.
 
-- **Explicit coercion**
-- **Implicit coercion**
+- Explicit coercion
+- Implicit coercion
 
 _**Explicit coercion**_ is when we try to convert a value of one type into another. When writing Js code we do it often time to ensure it does not introduce any bug in our app. For example :
 
