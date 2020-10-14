@@ -24,9 +24,7 @@ body {
   word-wrap: break-word;
   font-kerning: normal;
   background-color: #1a202c;
-  border: 5px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to bottom, #d53a9d, #743ad5);
+
   color: #f9f9f9;
 }
 
@@ -163,6 +161,14 @@ table {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom, #d53a9d, #743ad5);
   }
 }
 
