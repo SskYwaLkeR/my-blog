@@ -12,7 +12,7 @@ const Header = () => (
     <div className="header-body">
       <div className="header-nav">
         <Link to="/">Home</Link>
-        <Link to="/#">About</Link>
+        <Link to="/about">About</Link>
       </div>
       <div className="socials">
         <a aria-label="Twitter" href="https://twitter.com/Hrishikeshrai2">

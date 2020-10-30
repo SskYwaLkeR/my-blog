@@ -9,7 +9,7 @@ import "../components/index.css"
 export default ({ data }) => {
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title="Hrishikesh | Home" />
       <div>
         <div className="profile-wrapper">
           <div className="my-pic">
