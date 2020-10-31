@@ -42,7 +42,9 @@ let mapArr = _.map(arr, callback)
 console.log(mapArr) // [1,2,3]
 ```
 
-Why we use map over regular `for` is because we do not want to mutate data while iterating over it and with map as it returns a new array of data and also it does not affect the actual data that is being used to iterate over. Here's [link](https://github.com/SskYwaLkeR/map-Function-For-Array-And-Objects/blob/master/index.js) to the above code.
+Why we use map over regular `for` is because we do not want to mutate data while iterating over it and with map, as it returns a new array of data and also does not affect the actual data that is being used to iterate over.
+
+Here's [link](https://github.com/SskYwaLkeR/map-Function-For-Array-And-Objects/blob/master/index.js) to the above code.
 
 ### forEach()
 

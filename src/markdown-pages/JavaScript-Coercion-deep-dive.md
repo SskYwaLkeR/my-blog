@@ -13,7 +13,7 @@ Type coercion is automatic conversion of values from one data type to anonther. 
 - Explicit coercion
 - Implicit coercion
 
-_**Explicit coercion**_ is when we try to convert a value of one type into another. When writing Js code we do it often time to ensure it does not introduce any bug in our app. For example :
+_**Explicit coercion**_ is when "we" try to convert a value of one type into another. When writing Js code we do it often time to ensure it does not introduce any bug in our app. For example :
 
 ```js
 function formData(age) {
@@ -23,7 +23,7 @@ function formData(age) {
 }
 ```
 
-_**Implicit coercion**_ is when the compiler automatically assigns the data types. It happens when you apply operators to value of different types, or it can happen due to sorrounding context `if(value)` where value is coerced to `Boolean` . For example :
+_**Implicit coercion**_ is when the "compiler" automatically assigns the data types. It happens when you apply operators to value of different types, or it can happen due to sorrounding context (e.g `if(value)` )where value is coerced to `Boolean` . For example :
 
 ```js
 var rollNo = 51
@@ -32,11 +32,15 @@ var rollNo2 = 51 + "" // implicit coercion where Js complier will convert rollNo
 
 ### Why it even does coercion? Why it exists
 
-To make web a beautifull place to be at
+To make web a beautifull place for everyone, JS was designed in a way to forgive the common mistakes that we as a developer do ,and become more loved and adapted language and to do that language designer implemeted some of these concepts.
 
-Its something about the language design, JavaScript was meant to be more forgiving for the common mistakes that we as a developer do , more loved and adapted language and to maintain that language designer implemeted some of these concepts. its because of this intent of designer that we are able to do some of things that is not even imaginable in other laguage so easily. like `"2" + 1` trust me knowingly or unknowingly you have used this so many times. Should I remind you when ? How many time while taking input from a form you cared for the fact that a users input can be a string instead of a number that you expect, Js instead of screaming hey you did mistake why would you add 1 to a string type number, it be more generous and does the coercion automatically for you. And here in this perticular case its helpful too. Some of you coming from strongly typed language might prefer hey just scream, what's wrong is wrong. I get that I understand but there are atleast if not 100 millions of website that's using this _feature_ of JS and if suddenly we induce this into the language just imagine those website going down and not working its a problem. So what's the solution then
+Its because of this intent of designer that we are able to do some of things that is not even imaginable in other laguage. Like `"2" + 1` trust me knowingly or unknowingly you have used it so many times.
 
-the best solution will be that we understand it properly and work around this _functionality_ of js
+Should I remind you when ? Ok, How many time while taking input from a form you cared for the fact that a users input can be a string instead of a number that you expect, Js instead of screaming hey you did mistake why would you add 1 to a string type, it behaves more generously and does the coercion automatically for you.
+
+And here in this perticular case its helpful too. Some of us coming from strongly typed language might prefer "just scream, what's wrong is wrong". We get that we understand but there are atleast if not 100 millions of website that's using this _"feature"_ of JS and if suddenly we enforce this into the language just imagine those website going down and not functioning properly, its a problem !!.
+
+So what's the solution then, the best solution will be that we understand JS behaviour properly and work around this _functionality_ of js
 
 > Implicit type coercion is double edge sword, it can frustrate us as well as allow us to write less code which is more readible.
 
@@ -140,7 +144,7 @@ undefined
 
 toString and toNumber operation goes through toPrimitive abstract operation. It takes an input and an _optional argument_ **PreferredType**, and converts its input argument to a non Object type.
 
-The algo is recursive so if ToPrimitive doesn't give a primitive type it will recursively call untill it gets one or an error.
+This algo is recursive so if ToPrimitive doesn't give a primitive type it will recursively call untill it gets one or an error.
 
 The algo works in following way:
 
@@ -172,11 +176,14 @@ Number.prototype.valueOf = function () {
 new Number(1) == 5 //true
 ```
 
-**HOW??** , here in this case `1 == 5` would have worked just fine without any problem (ofcourse the output would be false too) but just because we used `Number(1)` it has to go through the `toPrimitive` and thus invoke valueOf() which returns 5 and hence `true`.
+**HOW??**
+
+Well.. just because we used `Number(1)` it has to go through the `toPrimitive` and thus invoke valueOf() which returns 5 and hence `true`. (if we would have used 1==5, without Number(1) this would've worked perfectly)
 
 > The point of this example was just to give you an idea(flow) of how conversion happens 😬.
 
-So that's pretty much about javascript coercion that I have to say. Hope you get some good idea about it.
+So that's pretty much about javascript coercion that I have to say. Hope you get some good idea about it feel free to DM
+me on twitter if you have an query.
 
 ### Referece
 

@@ -7,7 +7,7 @@ description: "Understanding javascript =="
 - `==` - Loosely check type.
 - `===` - Strictly check type.
 
-Apart from normal value checking both these operators check types and return a `Boolean` result. The `==` and `===` are absolutely equal when types match, What `===` does different is , it checks for type but no matter whats if they are different it returns `false` (no coercion happens). So decision in `==` and `===` is do you allow coercion to happen or not.
+Apart from normal value checking both these operators check types and return a `Boolean` result. The `==` and `===` are absolutely equal when types match, What `===` does different is , it checks for type but no matter what, if they are different it returns `false` (no coercion happens). So decision in `==` and `===` is do you allow coercion to happen or not.
 
 - `==` Allow coercion (When types are different).
 - `===` Doesn't allow coercion.

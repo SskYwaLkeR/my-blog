@@ -6,9 +6,9 @@ description: "Basics of javascript"
 
 > Before I write anything I just want to let you know that this is solely my personal understanding of the
 > language I might be absolutely wrong about something but hey this is why you and I are here, if you find something
-> wrong just file a PR or DM me on [twitter](https://twitter.com/Hrishikeshrai2). Now with that being said lets get started. These are some of everyday things we encounter JS.
+> wrong just file a PR or DM me on [twitter](https://twitter.com/Hrishikeshrai2).
 
-### what is javascript
+### What is javascript
 
 Short answer, its a programming language.
 
@@ -18,7 +18,7 @@ Javascript variables are just a bucket to hold values.
 
 ### Data Types
 
-In javascript variables don't have data type but values do, unlike other programming language where you declare
+In javascript variables don't have data type, but values do, unlike other programming language where you declare
 a variable using some _keyword_ like (int, string etc) in javascript we dont.
 
 Let's have a look into some of the _primitve data type_ in JS.
@@ -38,7 +38,7 @@ Let's have a look into some of the _primitve data type_ in JS.
 - `Function` (Sub type of Object)
 - `null`
 
-Ok so before you fire PR, let me explain the phrase _"variables don't have data type but values do"_
+Ok so before you fire PR, let me explain the phrase **_"variables don't have data type but values do"_**
 
 ```js
 var a
@@ -53,7 +53,7 @@ Now the question arise that hey isn't `undefined` a type. Well good question but
 typeof c //undefined
 ```
 
-its undefined even though we didn't even declare c.
+its undefined even though we didn't even declare it.
 
 ### JS type Coercion
 
@@ -94,26 +94,9 @@ JavaScript has two different value-comparison operations
 1. Loose equality comparison `==`
 2. Strict equality comparison `===`
 
-**Loose equality comparison** allow coercion but **Strict equality comparison** disallow it it checks for the type too.
+**Loose equality comparison** allow coercion but **Strict equality comparison** disallow it, it checks for the type too.
 
-And I lied to you it has 3 equality comparison operator instead of 2, the new one [object.is](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is) has been added recently but it uses the above two comparison operator inside so I didn't added it in the list 😉.
-
-A short story that I want to share with you is that with growing use of popluar libraries people are emphasisng more on _Strict equality checks_ but here is short snippet where _loose equality checks_ work like a charm
-
-```js
-// not so good looking code
-if (blog.title === null || blog.title === "undefined") {
-  // your rest of code
-}
-// good looking code
-if (blog.title == null) {
-  //your rest of code
-}
-
-// they both will do same thing as null or undefined will both become falsy
-```
-
-The point that I'm trying to make here is that if you know the type of variables in your code these thing can save you few lines of code.
+> And I lied to you it has 3 equality comparison operator instead of 2, the new one [object.is](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is) has been added recently but it uses the above two comparison operator inside so I didn't added it in the list 😉.
 
 ### Scope
 
