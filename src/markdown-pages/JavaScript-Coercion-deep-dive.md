@@ -32,13 +32,13 @@ var rollNo2 = 51 + "" // implicit coercion where Js complier will convert rollNo
 
 ### Why it even does coercion? Why it exists
 
-To make web a beautifull place for everyone, JS was designed in a way to forgive the common mistakes that we as a developer do ,and become more loved and adapted language and to do that language designer implemeted some of these concepts.
+To make web a beautifull place for everyone, JS was designed in a way to forgive the common mistakes that we as a developer do, and to do that the language designer implemeted some of these concepts.
 
 Its because of this intent of designer that we are able to do some of things that is not even imaginable in other laguage. Like `"2" + 1` trust me knowingly or unknowingly you have used it so many times.
 
 Should I remind you when ? Ok, How many time while taking input from a form you cared for the fact that a users input can be a string instead of a number that you expect, Js instead of screaming hey you did mistake why would you add 1 to a string type, it behaves more generously and does the coercion automatically for you.
 
-And here in this perticular case its helpful too. Some of us coming from strongly typed language might prefer "just scream, what's wrong is wrong". We get that we understand but there are atleast if not 100 millions of website that's using this _"feature"_ of JS and if suddenly we enforce this into the language just imagine those website going down and not functioning properly, its a problem !!.
+And here in this particular case its helpful too. Some of us coming from strongly typed language might prefer "just scream, what's wrong is wrong". We get that we understand but there are atleast if not 100 millions of website that's using this _"feature"_ of JS and if suddenly we enforce this into the language just imagine those website going down and not functioning properly, its a problem !!.
 
 So what's the solution then, the best solution will be that we understand JS behaviour properly and work around this _functionality_ of js
 
